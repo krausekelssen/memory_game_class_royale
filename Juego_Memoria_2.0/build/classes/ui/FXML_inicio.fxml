@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FXML_inicioController">
+   <children>
+      <Pane prefHeight="338.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="338.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/portada.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="espacio" layoutX="217.0" layoutY="283.0" prefHeight="21.0" prefWidth="168.0" text="Debe ingresar un nombre" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="183.0" layoutY="90.0" prefHeight="125.0" prefWidth="235.0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="235.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="125.0" fitWidth="126.0" layoutX="50.0" layoutY="153.0" onMouseClicked="#juego" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/play.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="126.0" layoutX="424.0" layoutY="153.0" onMouseClicked="#score" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/button_score.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nombreJugadorTF" layoutX="217.0" layoutY="215.0" prefHeight="45.0" prefWidth="168.0" promptText="Nombre del jugador" style="-fx-background-color: TRANSPARENT; -fx-prompt-text-fill: white; -fx-text-fill: white; -fx-border-radius: 15; -fx-border-color: white;">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </TextField>
+            <Hyperlink layoutX="409.0" layoutY="306.0" onAction="#instagram" prefHeight="29.0" prefWidth="100.0" text="Instagram" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/instagram.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="507.0" layoutY="306.0" prefHeight="29.0" prefWidth="91.0" text="Facebook" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/facebook.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
