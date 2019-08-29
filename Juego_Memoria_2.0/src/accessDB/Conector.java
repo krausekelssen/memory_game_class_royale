@@ -1,4 +1,4 @@
-package accessDB;
+﻿package accessDB;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -23,7 +23,7 @@ public class Conector {
                 case 1:
                     connectorBD = new SqlServerAccessDB("com.microsoft.sqlserver.jdbc.SQLServerDriver",
                             "jdbc:sqlserver://" + "ANGIE" + ";databaseName=" + "juegoMemoria" 
-                                    + ";user=" + "KrauseKelsen" + ";password=" + "123" + ";");
+                                    + ";user=" + "KrauseKelsen" + ";password=" + "***********" + ";");
 
                     //(DRIVER, CONECTOR)
                     return connectorBD;
